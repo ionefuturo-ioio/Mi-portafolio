@@ -1,46 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio | Desarrollador Web</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ione Carvalho | Frontend Developer</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="logo">MiPortafolio</div>
-            <ul>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <h1>Hola, soy Ione Carvalho</h1>
-        <p>Desarrollador Web con certificación de freeCodeCamp.</p>
-        <a href="https://www.linkedin.com/in/ione-carvalho-315197203" class="btn">Mi LinkedIn</a>
-    </section>
+  <!-- NAV -->
+  <header>
+    <nav class="navbar">
+      <span class="logo">Ione Carvalho</span>
+      <ul>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="proyectos" class="proyectos">
-        <h2>Mis Proyectos (freeCodeCamp)</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Página de Tributo</h3>
-                <p>Proyecto desarrollado con HTML y CSS puro.</p>
-                <a href="#" class="link">Ver código</a>
-            </div>
-            <div class="card">
-                <h3>Formulario de Encuesta</h3>
-                <p>Aplicación de etiquetas semánticas y validación.</p>
-                <a href="#" class="link">Ver código</a>
-            </div>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Frontend Developer</h1>
+    <p>
+      Desarrollador Web certificado en <strong>HTML, CSS y JavaScript</strong>.
+      Experiencia creando sitios web responsive e interactivos.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#proyectos" class="btn">Ver proyectos</a>
+      <a href="https://www.linkedin.com/in/ione-carvalho-315197203"
+         target="_blank"
+         class="btn secondary">
+        LinkedIn
+      </a>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="section">
+    <h2>Proyectos Destacados</h2>
+
+    <div class="grid">
+
+      <!-- Proyecto JS -->
+      <article class="card">
+        <h3>App de Tareas</h3>
+        <p>
+          Aplicación web interactiva desarrollada con JavaScript.
+          Permite crear, eliminar y guardar tareas usando LocalStorage.
+        </p>
+        <p class="tech">JavaScript · DOM · LocalStorage</p>
+        <div class="links">
+          <a href="#" target="_blank">Ver demo</a>
+          <a href="#" target="_blank">Código</a>
         </div>
-    </section>
+      </article>
 
-    <footer id="contacto">
-        <p>© 2026 - Creado por Ione</p>
-    </footer>
+      <!-- Proyecto HTML/CSS -->
+      <article class="card">
+        <h3>Página de Tributo</h3>
+        <p>
+          Sitio web responsive desarrollado con HTML5 semántico y CSS.
+        </p>
+        <p class="tech">HTML · CSS · Responsive</p>
+        <div class="links">
+          <a href="#" target="_blank">Ver demo</a>
+          <a href="#" target="_blank">Código</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section light">
+    <h2>Habilidades Técnicas</h2>
+
+    <ul class="skills-list">
+      <li>HTML5 semántico</li>
+      <li>CSS3 (Flexbox, Grid)</li>
+      <li>JavaScript (ES6+)</li>
+      <li>Manipulación del DOM</li>
+      <li>Diseño Responsive</li>
+      <li>Git & GitHub</li>
+      <li>GitHub Pages</li>
+    </ul>
+  </section>
+
+  <!-- CONTACTO -->
+  <footer id="contacto">
+    <h2>Contacto</h2>
+    <p>
+      ¿Te interesa mi perfil?  
+      Puedes contactarme por LinkedIn o ver mi código en GitHub.
+    </p>
+
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/ione-carvalho-315197203" target="_blank">
+        LinkedIn
+      </a>
+      <a href="https://github.com/ionefuturo-ioio" target="_blank">
+        GitHub
+      </a>
+    </div>
+
+    <p class="copy">© 2026 · Ione Carvalho</p>
+  </footer>
+
 </body>
 </html>
